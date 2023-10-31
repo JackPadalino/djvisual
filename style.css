@@ -7,7 +7,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: backgroundAnimation 10s infinite;
+  animation: backgroundAnimation 600s infinite;
 }
 
 @keyframes backgroundAnimation {
@@ -52,7 +52,7 @@ body {
 
 .djText {
   font-family: UrbanMelted;
-  animation: textAnimation 10s infinite;
+  animation: textAnimation 600s infinite;
 }
 
 #djName {
