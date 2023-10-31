@@ -1,12 +1,29 @@
-// // Get the text color of the first .djText element
-// const textColor = getComputedStyle(document.querySelector(".djText")).color;
+// POSSIBLE REACT SOLUTION!
 
-// // Calculate the inverse color
-// function invertColor(hex) {
+// import React, { useState, useEffect } from 'react';
+
+// function App() {
+//   const [textColor, setTextColor] = useState('#7734ea'); // Initial text color
+//   const [backgroundColor, setBackgroundColor] = useState('#000'); // Initial background color
+
+// //   Calculate complementary color
+//   const calculateComplementaryColor = (color) => {
+//     // Implement your color calculation logic here
+//     // Example: return complementary color
+//     return '#' + (0xFFFFFF ^ parseInt(color.slice(1), 16)).toString(16).padStart(6, '0');
+//   };
+
+//   // Use useEffect to monitor changes in textColor and update backgroundColor
+//   useEffect(() => {
+//     setBackgroundColor(calculateComplementaryColor(textColor));
+//   }, [textColor]);
+
 //   return (
-//     "#" + (0xffffff ^ parseInt(hex.slice(1), 16)).toString(16).padStart(6, "0")
+//     <div style={{ backgroundColor: backgroundColor }}>
+//       <h1 className="djText" style={{ color: textColor }}>SLKT</h1>
+//       <p className="djText" style={{ color: textColor }}>@slkt.nyc</p>
+//     </div>
 //   );
 // }
 
-// // Set the inverse color as the body background color
-// document.body.style.backgroundColor = invertColor(textColor);
+// export default App;
