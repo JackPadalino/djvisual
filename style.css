@@ -1,0 +1,61 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+
+@font-face {
+  font-family: "UrbanMelted";
+  src: local("UrbanMelted"), url("./fonts/UrbanMelted.ttf") format("truetype");
+}
+
+.djText {
+  font-family: UrbanMelted;
+  animation: myanimation 60s infinite;
+}
+
+#djName {
+  font-size: 350px;
+}
+
+#djInstaHandle {
+  font-size: 75px;
+}
+
+@keyframes myanimation {
+  0% {
+    color: #7734ea;
+  }
+  16.67% {
+    color: #00a7ea;
+  }
+  33.33% {
+    color: #8ae800;
+  }
+  50.01% {
+    color: #faf100;
+  }
+  66.68% {
+    color: #ffaa00;
+  }
+  84.33% {
+    color: #ff0061;
+  }
+  100% {
+    color: #7734ea;
+  }
+}
