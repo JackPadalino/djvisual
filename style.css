@@ -7,7 +7,34 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  animation: backgroundAnimation 10s infinite;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-color: #a7ea34;
+  }
+  14.28% {
+    background-color: #ea4300;
+  }
+  28.56% {
+    background-color: #5e00e8;
+  }
+  42.84% {
+    background-color: #0009fa;
+  }
+  57.12% {
+    background-color: #000000;
+  }
+  71.4% {
+    background-color: #0055ff;
+  }
+  85.68% {
+    background-color: #00ff9e;
+  }
+  100% {
+    background-color: #a7ea34;
+  }
 }
 
 #main {
@@ -25,7 +52,7 @@ body {
 
 .djText {
   font-family: UrbanMelted;
-  animation: myanimation 60s infinite;
+  animation: textAnimation 10s infinite;
 }
 
 #djName {
@@ -36,23 +63,26 @@ body {
   font-size: 75px;
 }
 
-@keyframes myanimation {
+@keyframes textAnimation {
   0% {
     color: #7734ea;
   }
-  16.67% {
+  14.28% {
     color: #00a7ea;
   }
-  33.33% {
+  28.56% {
     color: #8ae800;
   }
-  50.01% {
+  42.84% {
     color: #faf100;
   }
-  66.68% {
+  57.12% {
+    color: #ffffff;
+  }
+  71.4% {
     color: #ffaa00;
   }
-  84.33% {
+  85.68% {
     color: #ff0061;
   }
   100% {
