@@ -18,6 +18,7 @@
 .djContainer {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   width: 33%;
 }
@@ -46,14 +47,15 @@
 
 .djInstaHandle {
   font-family: UrbanMelted;
-  font-size: 275px;
+  font-size: 75px;
 }
 
 /* top left container */
-#djNameTopLeft {
-  animation: djNameTopLeftAnimation 60s infinite;
+.djTextTopLeft {
+  animation: djTextTopLeftAnimation 60s infinite;
 }
-@keyframes djNameTopLeftAnimation {
+
+@keyframes djTextTopLeftAnimation {
   0% {
     color: #7734ea;
   }
@@ -112,10 +114,10 @@
 }
 
 /* top center container */
-#djNameTopCenter {
-  animation: djNameTopCenterAnimation 60s infinite;
+.djTextTopCenter {
+  animation: djTextTopCenterAnimation 60s infinite;
 }
-@keyframes djNameTopCenterAnimation {
+@keyframes djTextTopCenterAnimation {
   0% {
     color: #00a7ea;
   }
@@ -174,10 +176,10 @@
 }
 
 /* top right container */
-#djNameTopRight {
-  animation: djNameTopRightAnimation 60s infinite;
+.djTextTopRight {
+  animation: djTextTopRightAnimation 60s infinite;
 }
-@keyframes djNameTopRightAnimation {
+@keyframes djTextTopRightAnimation {
   0% {
     color: #ffffff;
   }
@@ -236,10 +238,10 @@
 }
 
 /* bottom left container */
-#djNameBottomLeft {
-  animation: djNameBottomLeftAnimation 60s infinite;
+.djTextBottomLeft {
+  animation: djTextBottomLeftAnimation 60s infinite;
 }
-@keyframes djNameBottomLeftAnimation {
+@keyframes djTextBottomLeftAnimation {
   0% {
     color: #000000;
   }
@@ -298,10 +300,10 @@
 }
 
 /* bottom center container */
-#djNameBottomCenter {
-  animation: djNameBottomCenterAnimation 60s infinite;
+.djTextBottomCenter {
+  animation: djTextBottomCenterAnimation 60s infinite;
 }
-@keyframes djNameBottomCenterAnimation {
+@keyframes djTextBottomCenterAnimation {
   0% {
     color: #ea4300;
   }
@@ -360,10 +362,10 @@
 }
 
 /* bottom right container */
-#djNameBottomRight {
-  animation: djNameBottomRightAnimation 60s infinite;
+.djTextBottomRight {
+  animation: djTextBottomRightAnimation 60s infinite;
 }
-@keyframes djNameBottomRightAnimation {
+@keyframes djTextBottomRightAnimation {
   0% {
     color: #a7ea34;
   }
