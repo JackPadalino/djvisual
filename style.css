@@ -3,14 +3,72 @@
   padding: 0px;
 }
 
-body {
+#main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.row {
+  display: flex;
+  height: 50%;
+}
+
+.djContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: backgroundAnimation 600s infinite;
+  /* background-color: red; */
+  width: 33%;
+  border: 1px solid black;
 }
 
-@keyframes backgroundAnimation {
+@font-face {
+  font-family: "UrbanMelted";
+  src: local("UrbanMelted"), url("./fonts/UrbanMelted.ttf") format("truetype");
+}
+
+.djName {
+  font-family: UrbanMelted;
+  font-size: 275px;
+}
+
+/* top left container */
+#djNameTopLeft {
+  animation: djNameTopLeftAnimation 600s infinite;
+}
+@keyframes djNameTopLeftAnimation {
+  0% {
+    color: #7734ea;
+  }
+  14.28% {
+    color: #00a7ea;
+  }
+  28.56% {
+    color: #8ae800;
+  }
+  42.84% {
+    color: #faf100;
+  }
+  57.12% {
+    color: #ffffff;
+  }
+  71.4% {
+    color: #ffaa00;
+  }
+  85.68% {
+    color: #ff0061;
+  }
+  100% {
+    color: #7734ea;
+  }
+}
+
+#topLeftContainer {
+  animation: topLeftContainerAnimation 600s infinite;
+}
+
+@keyframes topLeftContainerAnimation {
   0% {
     background-color: #a7ea34;
   }
@@ -37,55 +95,72 @@ body {
   }
 }
 
-#main {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 5%;
-}
+/* top center container */
 
-@font-face {
-  font-family: "UrbanMelted";
-  src: local("UrbanMelted"), url("./fonts/UrbanMelted.ttf") format("truetype");
-}
+/* top right container */
 
-.djText {
-  font-family: UrbanMelted;
-  animation: textAnimation 600s infinite;
-}
+/* bottom left container */
 
-#djName {
-  font-size: 350px;
-}
+/* bottom center container */
 
-#djInstaHandle {
-  font-size: 75px;
+/* bottom right container */
+#djNameBottomRight {
+  animation: djNameBottomRightAnimation 600s infinite;
 }
-
-@keyframes textAnimation {
+@keyframes djNameBottomRightAnimation {
   0% {
-    color: #7734ea;
+    color: #a7ea34;
   }
   14.28% {
-    color: #00a7ea;
+    color: #ea4300;
   }
   28.56% {
-    color: #8ae800;
+    color: #5e00e8;
   }
   42.84% {
-    color: #faf100;
+    color: #0009fa;
   }
   57.12% {
-    color: #ffffff;
+    color: #000000;
   }
   71.4% {
-    color: #ffaa00;
+    color: #0055ff;
   }
   85.68% {
-    color: #ff0061;
+    color: #00ff9e;
   }
   100% {
-    color: #7734ea;
+    color: #a7ea34;
+  }
+}
+
+#bottomRightContainer {
+  animation: bottomRightContainerAnimation 600s infinite;
+}
+
+@keyframes bottomRightContainerAnimation {
+  0% {
+    background-color: #7734ea;
+  }
+  14.28% {
+    background-color: #00a7ea;
+  }
+  28.56% {
+    background-color: #8ae800;
+  }
+  42.84% {
+    background-color: #faf100;
+  }
+  57.12% {
+    background-color: #ffffff;
+  }
+  71.4% {
+    background-color: #ffaa00;
+  }
+  85.68% {
+    background-color: #ff0061;
+  }
+  100% {
+    background-color: #7734ea;
   }
 }
