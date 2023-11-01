@@ -7,7 +7,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: backgroundAnimation 600s infinite;
+  animation: backgroundAnimation 60s infinite;
 }
 
 @keyframes backgroundAnimation {
@@ -42,7 +42,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 5%; /* CHANGE THIS TO MOVE THE TEXT UP OR DOWN */
 }
 
 @font-face {
@@ -52,15 +52,15 @@ body {
 
 .djText {
   font-family: UrbanMelted;
-  animation: textAnimation 600s infinite;
+  animation: textAnimation 60s infinite;
 }
 
 #djName {
-  font-size: 350px;
+  font-size: 500px;
 }
 
 #djInstaHandle {
-  font-size: 75px;
+  font-size: 100px;
 }
 
 @keyframes textAnimation {
